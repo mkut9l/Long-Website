@@ -1,0 +1,1098 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1639422839168-ba0bd0d21d8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80") center/cover fixed;
+  box-shadow: inset 0px 100vh 0px rgba(0, 0, 0, 0.4);
+}
+header nav {
+  width: 90%;
+  padding: 15px 5%;
+}
+header nav .navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: wheat;
+}
+header nav .navigation .rightNav {
+  width: 55%;
+}
+header nav .navigation .leftNav {
+  width: 45%;
+}
+header nav .navigation i:hover {
+  color: #a96f02;
+  cursor: pointer;
+}
+header nav .navigation .rightNav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+header nav .navigation .rightNav li {
+  list-style: none;
+  padding: 0px 10px;
+}
+header nav .navigation .rightNav li a {
+  text-decoration: none;
+  color: wheat;
+  cursor: pointer;
+}
+header nav .navigation .rightNav li a:hover {
+  color: #ca8403;
+}
+header .flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+header .flex .develop {
+  color: wheat;
+  width: 50%;
+  margin-left: auto;
+  padding-top: 100px;
+}
+header .flex .develop h1 {
+  margin: 0px;
+}
+header .flex .develop p {
+  width: 60%;
+  padding: 10px 0px;
+}
+header .flex .develop .btn {
+  padding: 15px 35px;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  color: wheat;
+  background: #ca8403;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+main .aboutUs {
+  width: 60%;
+  padding: 0px 20%;
+  background: url("https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80") bottom/cover fixed;
+  box-shadow: inset 0px 100vh 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+main .aboutUs h1 {
+  margin-top: 0px;
+  padding-top: 100px;
+  color: wheat;
+}
+main .aboutUs p {
+  color: wheat;
+  padding-top: 20px;
+  padding-bottom: 120px;
+  width: 80%;
+  margin: 0 auto;
+}
+main .skills {
+  width: 90%;
+  padding: 0px 5%;
+  max-height: 100vh;
+  padding-bottom: 50px;
+  background: url("https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80") bottom/cover fixed;
+  box-shadow: inset 0px 100vh 0px rgba(0, 0, 0, 0.5);
+  color: wheat;
+}
+main .skills h1 {
+  margin-top: 0px;
+}
+main .skills div {
+  width: 100%;
+  margin: 20px 0px;
+  position: relative;
+  overflow: hidden;
+}
+main .skills div h3 {
+  font-weight: 400;
+  cursor: pointer;
+}
+main .skills div:before {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+main .skills div:after {
+  content: "";
+  width: 40%;
+  height: 2px;
+  background-color: #ca8403;
+  position: absolute;
+  bottom: 0px;
+  left: -100%;
+  transition: 500ms;
+}
+main .skills div:hover:after {
+  left: 0px;
+}
+main .block {
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #333;
+  color: wheat;
+}
+main .block .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+main .block .box .icon {
+  width: 50%;
+}
+main .block .box .icon i {
+  font-size: 36px;
+}
+main .block .box .text {
+  width: 50%;
+}
+main .block .box .text h4 {
+  margin: 0px;
+}
+main .block .box .text p {
+  margin: 0px;
+}
+main .gallery {
+  width: 100%;
+  display: grid;
+  min-height: 20vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 300px;
+}
+main .gallery .IMGS {
+  background: url("https://images.unsplash.com/photo-1516885726422-4d4bbfce5b9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80") center/cover;
+  display: flex;
+  transition: 500ms;
+}
+main .gallery .IMGS:hover {
+  box-shadow: inset 0px 100vh 0px rgba(0, 0, 0, 0.6);
+}
+main .gallery .IMGS:hover i {
+  opacity: 1;
+}
+main .gallery .IMGS i {
+  width: 20%;
+  margin: 0 auto;
+  align-self: center;
+  text-align: center;
+  font-size: 36px;
+  color: wheat;
+  opacity: 0;
+}
+main .gallery .IMGS1 {
+  background: url("https://images.unsplash.com/photo-1639252633000-815a85bd8a22?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80") center/cover;
+  display: flex;
+  transition: 500ms;
+}
+main .gallery .IMGS1:hover {
+  box-shadow: inset 0px 100vh 0px rgba(0, 0, 0, 0.6);
+}
+main .gallery .IMGS1:hover i {
+  opacity: 1;
+}
+main .gallery .IMGS1 i {
+  width: 20%;
+  margin: 0 auto;
+  align-self: center;
+  font-size: 36px;
+  color: wheat;
+  opacity: 0;
+}
+main .load {
+  width: 100%;
+  background: #333;
+}
+main .load h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  padding: 30px 0px;
+  color: wheat;
+}
+main .process {
+  width: 100%;
+  height: 105vh;
+  background: url("https://images.unsplash.com/photo-1556545094-25635bdb8c1c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80") center/cover fixed;
+  box-shadow: inset 0px 105vh 0px rgba(0, 0, 0, 0.5);
+  color: wheat;
+  text-align: center;
+}
+main .process h1 {
+  margin-top: 0px;
+  padding-top: 50px;
+  margin-bottom: 0px;
+}
+main .process p {
+  padding: 20px 0px;
+}
+main .process .video {
+  width: 100%;
+}
+main .process .video iframe {
+  width: 80%;
+  height: 450px;
+}
+main .iconBox {
+  width: 100%;
+  padding: 50px 0px;
+  background: #333;
+}
+main .iconBox .upperIconBlock, main .iconBox .underIconBlock {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 30px;
+  color: wheat;
+}
+main .iconBox .upperIconBlock div, main .iconBox .underIconBlock div {
+  width: 20%;
+}
+main .iconBox .upperIconBlock div i, main .iconBox .underIconBlock div i {
+  font-size: 36px;
+}
+main .lorem {
+  width: 60%;
+  padding: 20%;
+  text-align: center;
+  line-height: 40px;
+  background: url("https://images.unsplash.com/photo-1566735275348-ce77ba8006c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1933&q=80") center/cover fixed;
+  color: wheat;
+}
+main .afterLorem {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #f6f8f7;
+}
+main .afterLorem div {
+  width: 20%;
+}
+main .afterLorem div img {
+  width: 100%;
+}
+main .form {
+  width: 100%;
+  background: #505050;
+}
+main .form h1 {
+  color: wheat;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 50px;
+}
+main .form p {
+  text-align: center;
+  color: wheat;
+  padding-bottom: 20px;
+}
+main .form .upperForm {
+  width: 70%;
+  padding: 0px 15%;
+  display: flex;
+  justify-content: space-between;
+}
+main .form .upperForm input {
+  width: 50%;
+  margin: 0px 10px;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 4px;
+  background: wheat;
+}
+main .form .centerForm {
+  width: 70%;
+  padding: 0px 15%;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .form .centerForm input {
+  width: 100%;
+  margin: 20px 10px;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 4px;
+  background: wheat;
+}
+main .form .underForm {
+  width: 70%;
+  padding: 0px 15%;
+  display: flex;
+}
+main .form .underForm textarea {
+  width: 100%;
+  height: 200px;
+  margin: 0px 10px;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 4px;
+  background: wheat;
+  color: grey;
+  margin-bottom: 30px;
+}
+main .form .btnBlock {
+  text-align: center;
+  padding-bottom: 70px;
+}
+main .form .btn {
+  padding: 15px 35px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: wheat;
+  background: #ca8403;
+  text-align: center;
+}
+main .footer {
+  width: 100%;
+  background: #000;
+  color: wheat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 50px 0px;
+}
+main .footer h5, main .footer p {
+  margin-top: 0px;
+}
+main nav {
+  width: 90%;
+  padding: 15px 5%;
+  background: #333;
+}
+main nav .navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: wheat;
+}
+main nav .navigation .rightNav {
+  width: 30%;
+}
+main nav .navigation .leftNav {
+  width: 70%;
+}
+main nav .navigation i:hover {
+  color: #a96f02;
+  cursor: pointer;
+}
+main nav .navigation .rightNav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+main nav .navigation .rightNav li {
+  list-style: none;
+  padding: 0px 10px;
+}
+main nav .navigation .rightNav li a {
+  text-decoration: none;
+  color: wheat;
+  cursor: pointer;
+}
+main nav .navigation .rightNav li a:hover {
+  color: #ca8403;
+}
+main .UxUi {
+  width: 70%;
+  padding: 0px 15%;
+  background: black;
+  padding-bottom: 50px;
+  color: wheat;
+  text-align: center;
+}
+main .UxUi h1 {
+  margin-top: 0px;
+  padding-top: 50px;
+}
+main .woods {
+  width: 100%;
+  height: 50vh;
+  color: wheat;
+  text-align: center;
+  background: url("https://images.unsplash.com/photo-1531776691428-a0096d20137c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80") center/cover;
+  box-shadow: inset 0px 105vh 0px rgba(0, 0, 0, 0.5);
+}
+main .woods h1 {
+  margin-top: 0px;
+  padding-top: 50px;
+}
+main .flex {
+  width: 100%;
+  padding-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  background: url("https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80") bottom/cover;
+  box-shadow: inset 0px 100vh 0px rgba(0, 0, 0, 0.5);
+}
+main .flex .develop {
+  color: wheat;
+  width: 40%;
+  margin-left: auto;
+  padding-top: 100px;
+}
+main .flex .develop h1 {
+  margin: 0px;
+}
+main .flex .develop p {
+  width: 60%;
+  padding: 10px 0px;
+  padding-bottom: 20px;
+}
+main .breakfast {
+  width: 100%;
+  min-height: 20vh;
+  display: flex;
+  background: #505050;
+  color: black;
+  flex-wrap: wrap;
+}
+main .breakfast .textBreakfast {
+  width: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #505050;
+  color: wheat;
+}
+main .breakfast .textBreakfast h1 {
+  margin-top: 0px;
+}
+main .breakfast .textBreakfast h1, main .breakfast .textBreakfast p {
+  padding: 0px 25px;
+}
+main .breakfast .contactInfo {
+  width: 50%;
+  color: wheat;
+  padding-top: 50px;
+}
+main .breakfast .contactInfo h1 {
+  margin-top: 0px;
+}
+main .breakfast .contactInfo h1, main .breakfast .contactInfo p {
+  padding: 0px 25px;
+}
+main .breakfast .imgBreakfast {
+  width: 50%;
+  padding-top: 50px;
+  background: #505050;
+  padding-bottom: 50px;
+}
+main .breakfast .imgBreakfast img {
+  width: 100%;
+  height: 100%;
+}
+main .breakfast .formBreakfast {
+  width: 50%;
+  padding-top: 50px;
+}
+main .map {
+  background: #333;
+  padding-bottom: 80px;
+}
+main .map h1 {
+  text-align: center;
+  padding-top: 40px;
+  color: white;
+}
+main .mainMap {
+  height: 70vh;
+  width: 90%;
+  padding: 0 5%;
+}
+
+@media (max-width: 1420px) {
+  header nav .navigation .rightNav {
+    width: 60%;
+  }
+  header nav .navigation .leftNav {
+    width: 40%;
+  }
+}
+@media (max-width: 1300px) {
+  header nav .navigation .rightNav {
+    width: 65%;
+  }
+  header nav .navigation .leftNav {
+    width: 35%;
+  }
+}
+@media (max-width: 1200px) {
+  header nav .navigation .rightNav {
+    width: 70%;
+  }
+  header nav .navigation .leftNav {
+    width: 30%;
+  }
+}
+@media (max-width: 1120px) {
+  header nav .navigation .rightNav {
+    width: 75%;
+  }
+  header nav .navigation .leftNav {
+    width: 25%;
+  }
+
+  main nav .navigation .rightNav {
+    width: 40%;
+  }
+  main nav .navigation .leftNav {
+    width: 60%;
+  }
+}
+@media (max-width: 1050px) {
+  header nav .navigation .rightNav {
+    width: 80%;
+  }
+  header nav .navigation .leftNav {
+    width: 20%;
+  }
+}
+@media (max-width: 1000px) {
+  main .UxUi h1 {
+    font-size: 28px;
+  }
+
+  main .woods h1 {
+    font-size: 28px;
+  }
+
+  .rightNav li a {
+    font-size: 14px;
+  }
+
+  header .flex .develop h1 {
+    font-size: 28px;
+  }
+  header .flex .develop p {
+    font-size: 14px;
+  }
+  header .flex .develop .btn {
+    padding: 15px 30px;
+  }
+
+  main nav .navigation .rightNav {
+    width: 40%;
+  }
+  main nav .navigation .rightNav a {
+    font-size: 14px;
+  }
+  main nav .navigation .leftNav {
+    width: 60%;
+  }
+
+  .aboutUs h1 {
+    font-size: 28px;
+  }
+  .aboutUs p {
+    font-size: 14px;
+  }
+
+  .skills h1 {
+    font-size: 28px;
+  }
+  .skills div h3 {
+    font-size: 16px;
+  }
+
+  .block .box .icon i {
+    font-size: 32px;
+  }
+  .block .box .text {
+    width: 50%;
+  }
+  .block .box .text h4 {
+    font-size: 18px;
+  }
+  .block .box .text p {
+    font-size: 14px;
+  }
+
+  .process h1 {
+    font-size: 28px;
+  }
+  .process p {
+    font-size: 14px;
+  }
+
+  main .form {
+    padding-top: 50px;
+  }
+  main .form h1 {
+    font-size: 28px;
+  }
+  main .form p {
+    font-size: 14px;
+  }
+  main .form .btn {
+    padding: 15px 30px;
+    font-size: 14px;
+  }
+
+  .footer {
+    font-size: 14px;
+  }
+
+  .breakfast .textBreakfast h1 {
+    font-size: 28px;
+  }
+  .breakfast .textBreakfast p {
+    font-size: 14px;
+  }
+
+  main .contactInfo h1 {
+    font-size: 28px;
+  }
+  main .contactInfo p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 900px) {
+  header nav .navigation .rightNav {
+    width: 85%;
+  }
+  header nav .navigation .leftNav {
+    width: 15%;
+  }
+
+  main .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+  }
+  main .gallery .IMGS i {
+    font-size: 30px;
+  }
+  main .gallery .IMGS1 i {
+    font-size: 30px;
+  }
+}
+@media (max-width: 850px) {
+  header nav .navigation .rightNav {
+    width: 90%;
+  }
+  header nav .navigation .leftNav {
+    width: 10%;
+  }
+}
+@media (max-width: 800px) {
+  header nav .navigation .rightNav {
+    width: 95%;
+  }
+  header nav .navigation .leftNav {
+    width: 5%;
+  }
+
+  main .aboutUs h1 {
+    font-size: 24px;
+  }
+  main .aboutUs p {
+    font-size: 12px;
+  }
+  main .skills h1 {
+    font-size: 24px;
+  }
+  main .skills div h3 {
+    font-size: 14px;
+  }
+
+  main .block .box .icon i {
+    font-size: 28px;
+  }
+  main .block .box .text {
+    width: 50%;
+  }
+  main .block .box .text h4 {
+    font-size: 16px;
+  }
+  main .block .box .text p {
+    font-size: 12px;
+  }
+
+  main .process h1 {
+    font-size: 24px;
+  }
+  main .process p {
+    font-size: 12px;
+  }
+
+  main .form {
+    padding-top: 50px;
+  }
+  main .form h1 {
+    font-size: 24px;
+  }
+  main .form p {
+    font-size: 12px;
+  }
+  main .form .btn {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  main .footer {
+    font-size: 12px;
+  }
+  main .breakfast .textBreakfast h1 {
+    font-size: 24px;
+  }
+  main .breakfast .textBreakfast p {
+    font-size: 12px;
+  }
+
+  .rightNav li a {
+    font-size: 14px;
+  }
+
+  main .flex .develop h1 {
+    font-size: 24px;
+  }
+  main .flex .develop p {
+    font-size: 12px;
+  }
+  main .flex .develop .btn {
+    padding: 10px 25px;
+  }
+
+  header .flex .develop h1 {
+    font-size: 24px;
+  }
+  header .flex .develop p {
+    font-size: 12px;
+  }
+  header .flex .develop .btn {
+    padding: 10px 25px;
+  }
+
+  main .iconBox {
+    width: 100%;
+    padding: 50px 0px;
+    background: #333;
+  }
+  main .iconBox .upperIconBlock div, main .iconBox .underIconBlock div {
+    width: 20%;
+  }
+  main .iconBox .upperIconBlock div h4, main .iconBox .underIconBlock div h4 {
+    font-size: 14px;
+  }
+  main .iconBox .upperIconBlock div p, main .iconBox .underIconBlock div p {
+    font-size: 12px;
+  }
+  main .iconBox .upperIconBlock div i, main .iconBox .underIconBlock div i {
+    font-size: 30px;
+  }
+
+  main .UxUi h1 {
+    font-size: 24px;
+  }
+
+  main .contactInfo h1 {
+    font-size: 24px;
+  }
+  main .contactInfo p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 750px) {
+  main .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 220px;
+  }
+
+  main nav .navigation .rightNav {
+    width: 50%;
+  }
+  main nav .navigation .rightNav a {
+    font-size: 14px;
+  }
+  main nav .navigation .leftNav {
+    width: 50%;
+  }
+
+  main .breakfast .textBreakfast {
+    width: 50%;
+    color: wheat;
+  }
+  main .breakfast .textBreakfast h1 {
+    margin-top: 0px;
+  }
+  main .breakfast .textBreakfast h1, main .breakfast .textBreakfast p {
+    padding: 0px 25px;
+  }
+  main .breakfast .imgBreakfast {
+    width: 50%;
+  }
+  main .breakfast .imgBreakfast img {
+    width: 100%;
+    height: 100%;
+  }
+
+  main .breakfast {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    background: #333;
+    color: black;
+    flex-wrap: wrap;
+  }
+  main .breakfast .textBreakfast {
+    width: 50%;
+    padding-top: 50px;
+    color: wheat;
+  }
+  main .breakfast .textBreakfast h1 {
+    margin-top: 0px;
+  }
+  main .breakfast .textBreakfast h1, main .breakfast .textBreakfast p {
+    padding: 0px 25px;
+  }
+  main .breakfast .contactInfo {
+    width: 100%;
+    color: wheat;
+    padding-top: 50px;
+  }
+  main .breakfast .contactInfo h1 {
+    margin-top: 0px;
+  }
+  main .breakfast .contactInfo h1, main .breakfast .contactInfo p {
+    padding: 0px 25px;
+  }
+  main .breakfast .imgBreakfast {
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  main .breakfast .imgBreakfast img {
+    width: 100%;
+    height: 100%;
+  }
+  main .breakfast .formBreakfast {
+    width: 100%;
+  }
+
+  main .breakfast .textBreakfast {
+    width: 100%;
+  }
+  main .breakfast .textBreakfast h1 {
+    margin-top: 0px;
+  }
+  main .breakfast .textBreakfast h1, main .breakfast .textBreakfast p {
+    padding: 0px 25px;
+  }
+  main .breakfast .imgBreakfast {
+    width: 80%;
+    padding: 0px 10%;
+    padding-bottom: 50px;
+  }
+  main .breakfast .imgBreakfast img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 600px) {
+  main .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+  }
+
+  main nav .navigation .rightNav {
+    width: 60%;
+  }
+  main nav .navigation .rightNav a {
+    font-size: 14px;
+  }
+  main nav .navigation .leftNav {
+    width: 40%;
+  }
+
+  main .footer {
+    width: 100%;
+    background: #000;
+    color: wheat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 50px 0px;
+  }
+  main .footer h5, main .footer p {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 500px) {
+  main .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+  }
+
+  main nav .navigation .rightNav {
+    width: 70%;
+  }
+  main nav .navigation .rightNav a {
+    font-size: 12px;
+  }
+  main nav .navigation .leftNav {
+    width: 30%;
+  }
+
+  header nav .navigation .rightNav {
+    width: 95%;
+  }
+  header nav .navigation .leftNav {
+    width: 5%;
+  }
+
+  main .aboutUs h1 {
+    font-size: 20px;
+  }
+  main .aboutUs p {
+    font-size: 10px;
+  }
+  main .skills h1 {
+    font-size: 20px;
+  }
+  main .skills div h3 {
+    font-size: 12px;
+  }
+
+  main .block .box .icon i {
+    font-size: 22px;
+  }
+  main .block .box .text {
+    width: 50%;
+  }
+  main .block .box .text h4 {
+    font-size: 12px;
+  }
+  main .block .box .text p {
+    font-size: 10px;
+  }
+
+  main .process h1 {
+    font-size: 20px;
+  }
+  main .process p {
+    font-size: 10px;
+  }
+
+  main .form h1 {
+    font-size: 20px;
+  }
+  main .form p {
+    font-size: 10px;
+  }
+  main .form .btn {
+    padding: 8px 20px;
+    font-size: 12px;
+  }
+
+  main .footer {
+    font-size: 10px;
+  }
+  main .breakfast .textBreakfast h1 {
+    font-size: 20px;
+  }
+  main .breakfast .textBreakfast p {
+    font-size: 10px;
+  }
+
+  .rightNav li a {
+    font-size: 12px;
+  }
+
+  main .flex .develop h1 {
+    font-size: 20px;
+  }
+  main .flex .develop p {
+    font-size: 10px;
+  }
+  main .flex .develop .btn {
+    padding: 8px 20px;
+    font-size: 10px;
+  }
+
+  header .flex .develop h1 {
+    font-size: 20px;
+  }
+  header .flex .develop p {
+    font-size: 10px;
+  }
+  header .flex .develop .btn {
+    padding: 8px 20px;
+    font-size: 10px;
+  }
+
+  main .iconBox .upperIconBlock div, main .iconBox .underIconBlock div {
+    width: 20%;
+  }
+  main .iconBox .upperIconBlock div h4, main .iconBox .underIconBlock div h4 {
+    font-size: 12px;
+  }
+  main .iconBox .upperIconBlock div p, main .iconBox .underIconBlock div p {
+    font-size: 10px;
+  }
+  main .iconBox .upperIconBlock div i, main .iconBox .underIconBlock div i {
+    font-size: 24px;
+  }
+
+  main .UxUi h1 {
+    font-size: 20px;
+  }
+
+  main .contactInfo h1 {
+    font-size: 20px;
+  }
+  main .contactInfo p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 400px) {
+  main nav .navigation .rightNav {
+    width: 80%;
+  }
+  main nav .navigation .rightNav a {
+    font-size: 12px;
+  }
+  main nav .navigation .leftNav {
+    width: 20%;
+  }
+
+  main .footer .difFoot {
+    width: 30%;
+    padding: 20px 10%;
+  }
+}
+@media (max-width: 350px) {
+  main nav .navigation .rightNav {
+    width: 90%;
+  }
+  main nav .navigation .rightNav a {
+    font-size: 12px;
+  }
+  main nav .navigation .leftNav {
+    width: 10%;
+  }
+
+  header .flex .develop h1 {
+    font-size: 19px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
